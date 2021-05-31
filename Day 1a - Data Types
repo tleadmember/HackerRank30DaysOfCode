@@ -1,0 +1,65 @@
+// Hacker Rank - 30 Days of Code
+// This program was written following youtube video by blondiebytes
+// as she explained the concepts for Day 1 - Data Types
+
+package car;
+
+/**
+ *
+ * @author Bean
+ */
+public class Car {
+    
+    int maxSpeed = 100; // a property
+    int minSpeed = 0; // another property
+    double weight = 4079; // or float (smaller than double)
+    boolean isTheCarOn = false; // will not take 0 or 1
+    char condition = 'A';
+    String nameOfCar = "Lucy";
+
+    // A function, where public is the domain of the function
+    public void printVariables() {
+        System.out.println("The max speed is: " + maxSpeed);
+        System.out.println(minSpeed);
+        System.out.println(weight);
+        System.out.println(isTheCarOn);
+        System.out.println(condition);
+        System.out.println(nameOfCar);
+    }
+    
+    /*
+    // Another function
+    public void wreckCar() {
+        condition = 'C';
+    }
+    */
+    
+    // Another function
+    public void upgradeMinSpeed() {
+        minSpeed = maxSpeed;
+        maxSpeed = maxSpeed + 1;
+    }
+    
+    // Main function
+    public static void main(String[] args){
+        /*
+        // Create an instance
+        Car carry = new Car();
+        // Call the function created above
+        carry.printVariables();
+        */
+        
+        Car familyCar = new Car();
+        System.out.println("Family Car: ");
+        familyCar.printVariables();
+        /*
+        Car aliceCar = familyCar;
+        familyCar.wreckCar();
+        System.out.println("Alice's Car: ");
+        aliceCar.printVariables();
+        */
+        familyCar.upgradeMinSpeed();
+        familyCar.printVariables(); // again
+    }
+    
+}
