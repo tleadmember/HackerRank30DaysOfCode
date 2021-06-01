@@ -1,0 +1,57 @@
+/* Hacker Rank - 30 Days of Code
+ * This program was written to fulfill the task for Day 1 - Data Types 
+ */
+package day1.datatypes;
+
+//import java.io.*;
+import java.util.*; // for Scanner scan
+//import java.text.*;
+//import java.math.*;
+//import java.util.regex.*;
+
+/**
+ *
+ * @author Bean
+ */
+public class Day1DataTypes {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // Given
+        int i = 4;
+        double d = 4.0;
+        String s = "HackerRank ";
+        
+        // TODO code application logic here
+        // Create a Scanner object to read input from stdin.
+	Scanner scan = new Scanner(System.in); 
+                
+        /* Declare second integer, double, and String variables. */
+        int i2;
+        double d2;
+        String s2;
+        
+        /* Read and save an integer, double, and String to your variables.*/
+        i2 = scan.nextInt();
+        d2 = scan.nextDouble();
+        scan.nextLine();
+        s2 = scan.nextLine();
+        
+        // Closing Scanner after use
+        scan.close();
+        
+        /* Print the sum of both integer variables on a new line. */
+        System.out.println(i+i2);
+          
+        /* Print the sum of the double variables on a new line. */
+	System.out.println(d+d2);
+        
+        /* Concatenate and print the String variables on a new line; 
+        	the 's' variable above should be printed first. */
+        System.out.println(s+s2);
+        
+    }
+    
+}
